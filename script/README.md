@@ -29,6 +29,12 @@
 
 3. Restart Claude Code for the setting to take effect.
 
+4. Verify `jq` is installed — if the statusline shows empty values, install it manually:
+   ```bash
+   jq --version || sudo apt install -y jq   # Ubuntu / Debian / WSL
+   jq --version || brew install jq          # macOS
+   ```
+
 ## Output Format
 
 Two lines are printed to stdout on every statusline refresh.

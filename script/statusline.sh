@@ -140,7 +140,7 @@ fi
 # ══════════════════════════════════════════════════════════════
 # LINE 2: Context bar + Duration + Rate limits (5h & 7d with countdown) + Cache
 # ══════════════════════════════════════════════════════════════
-L2="${BAR} ${DIM}${PCT}%${RESET}${SEP}${DIM}${DUR}${RESET}"
+L2="${BAR} ${DIM}${PCT}%${RESET}"
 
 if [ -n "$RATE_5H" ]; then
   R5_INT=$(printf "%.0f" "$RATE_5H")
@@ -163,6 +163,7 @@ if [ -n "$RATE_7D" ]; then
 fi
 
 [ -n "$CACHE_HIT" ] && L2="${L2}${SEP}${CACHE_HIT}"
+L2="${L2}${SEP}${DIM}${DUR}${RESET}"
 
 # ── Output ────────────────────────────────────────────────────
 echo -e "$L1"
