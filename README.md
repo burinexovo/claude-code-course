@@ -48,8 +48,7 @@ claude-code-course/
 - [uv](https://docs.astral.sh/uv/) 套件管理
 
 ```bash
-uv sync        # 安裝依賴
-uv run app.py  # 啟動 Flask API（課堂後半段使用）
+uv run flask --app app run --port 5001
 ```
 
 ## 資料集
