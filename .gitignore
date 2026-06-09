@@ -3,9 +3,6 @@ __pycache__/
 *.py[cod]
 .venv/
 
-# uv
-uv.lock
-
 # macOS
 .DS_Store
 
